@@ -1,0 +1,8 @@
+rootProject.name = 'oauth2-demo'
+
+include 'auth-server'
+include 'oauth2-client'
+
+rootProject.children.each {project ->
+    project.buildFileName = "${project.name}.gradle"
+}
